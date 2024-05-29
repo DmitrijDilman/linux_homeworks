@@ -1,0 +1,16 @@
+
+#!/bin/bash
+
+DATE="20.04.23"
+
+TARGET_DIR="/opt/250324_evening/Vdream"
+
+cd "$TARGET_DIR" || exit
+
+for i in {1..10}; do
+    touch "${i}${DATE}"
+done
+
+#ARCHIVE_DIR="${TARGET_DIR}/hwarchive"
+#mkdir -p "$ARCHIVE_DIR"
+
